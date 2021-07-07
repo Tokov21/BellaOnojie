@@ -9,6 +9,8 @@
 }
 
 a {
+  width: fit-content;
+
   text-decoration: none;
   color: #000;
 }
@@ -21,8 +23,10 @@ body {
 
 .header {
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
   align-items: center;
+
+  /* padding: 14px 10vw; */
 
   position: fixed;
   top: 0;
@@ -43,8 +47,9 @@ body {
 
   min-height: 100vh;
 
-  background: url(../images/hello-screen-background.svg) no-repeat center
+  background: url(../images/hello-screen-background.webp) no-repeat center
     center/cover;
+  background-attachment: fixed;
   color: white;
 }
 
@@ -61,17 +66,21 @@ body {
   text-align: center;
 }
 
+.hello-screen-text > h3 {
+  color: #f6f6f6;
+}
+
 .hello-screen-text > h1 {
   margin: 17px 0 27px 0;
 
   font-family: "Poppins";
   font-size: 58px;
-  overflow-wrap: break-word;
 }
 
 .hello-screen-text > p {
   margin-bottom: 54px;
 
+  color: #f6f6f6;
   font-weight: 500;
 }
 
@@ -111,29 +120,46 @@ body {
   align-items: center;
 }
 
+.phone {
+  width: 100%;
+  height: auto;
+  min-width: 150px;
+}
+
 .phones {
   position: relative;
   z-index: 0;
 
-  margin-top: -430px;
-  margin-left: -200px;
+  margin-top: -260px;
+
+  filter: drop-shadow(50px 30px 150px rgba(46, 4, 4, 0.21));
 }
 
 .about-hr {
-  width: 60%;
+  width: 55%;
   border: none;
   height: 3px;
   background-color: #e4e4e4;
-  margin: 0 0 72px 0;
+  margin: 129px 0 72px 0;
 }
 
 .how-works {
   font-size: 44px;
+  text-align: center;
 }
 
-.about-acc {
+.about {
   display: flex;
   align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+
+  width: 55vw;
+  height: 100vh;
+}
+
+.login-phone {
+  filter: drop-shadow(50px 30px 150px rgba(46, 4, 4, 0.15));
 }
 
 .about-text {
@@ -150,14 +176,114 @@ body {
   margin-bottom: 17px;
 }
 
+.about-link:hover {
+  transform: scale(1.05);
+  transition: transform 0.2s ease;
+}
+
 .about-text h3 {
   font-size: 40px;
 }
 
 .about-text p {
+  color: #737373;
   font-weight: 500;
 }
 
 .shop {
   flex-direction: row-reverse;
+}
+
+.shop-phone {
+  filter: drop-shadow(50px 30px 150px rgba(46, 4, 4, 0.15));
+}
+
+.last-screen {
+  background: url(../images/last-screen-background.webp) no-repeat center
+    center/cover;
+  background-attachment: fixed;
+}
+
+.last-screen-text h1 {
+  font-family: var(--montserrat);
+  font-size: 40px;
+}
+
+.last-screen-btn {
+  border-radius: 10px;
+}
+
+.footer {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-wrap: wrap;
+
+  margin-top: 37px;
+
+  background-color: #fff;
+}
+
+.socials {
+  display: flex;
+}
+
+.socials a {
+  display: flex;
+}
+
+.socials a:hover {
+  transform: scale(1.2);
+  transition: transform 0.3s ease;
+}
+
+.socials a + a {
+  margin-left: 30px;
+}
+
+.soc-img {
+  width: 40px;
+
+  filter: invert(34%) sepia(97%) saturate(3126%) hue-rotate(357deg)
+    brightness(101%) contrast(96%);
+}
+
+.copyright {
+  font-size: 12px;
+  color: #5c5c5c;
+}
+
+@media screen and (max-width: 414px) {
+  .body {
+    text-align: center;
+  }
+
+  .hello-screen {
+    background-image: none;
+
+    color: #000;
+  }
+
+  .hello-screen-text h3{
+    font-size: 16px;
+    color: #000;
+  }
+
+  .hello-screen-text h1 {
+    font-size: 36px;
+  }
+
+  .hello-screen-text p {
+    color: #000;
+  }
+
+  .hello-screen-text h1 > br {
+    display: none;
+  }
+
+  .hello-screen-btn + .hello-screen-btn {
+    margin: 10px 0 0 0;
+  }
+  
+
 }
