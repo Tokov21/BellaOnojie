@@ -16,12 +16,16 @@
   <body>
     <header class="header">
       <div class="logo-wrap">
-        <img class="logo" src="./assets/images/logo.svg" alt="Logo" />
+        <a href="/">
+          <img class="logo" src="./assets/images/logo.svg" alt="Logo" />
+        </a>
       </div>
+
       <div class="menu-wrap">
         <input type="checkbox" class="toggler" />
       </div>
     </header>
+
     <main>
       <section class="hello-screen">
         <div class="hello-screen-text">
@@ -32,25 +36,35 @@
           </h1>
           <p>Download the bella onoje's food app now on</p>
         </div>
+
         <div class="hello-screen-btns">
-          <button class="btn hello-screen-btn">Playstore</button>
-          <button class="btn hello-screen-btn">App store</button>
+          <a href="/" target="_blank" class="btn hello-screen-btn">Playstore</a>
+          <a href="/" target="_blank" class="btn hello-screen-btn">App store</a>
         </div>
       </section>
+
       <section class="about-app">
         <div class="phones-wrap">
           <img
             src="./assets/images/phones.svg"
             alt="Phones with the app"
-            class="phones"
+            class="phone phones"
           />
         </div>
+
         <hr class="about-hr" />
+
         <h2 class="how-works">How the app works</h2>
-        <div class="about-acc">
+
+        <div class="about login">
           <div class="about-phone-wrap">
-            <img src="./assets/images/login-phone.svg" alt="Login phone" />
+            <img
+              src="./assets/images/login-phone.svg"
+              alt="Login phone"
+              class="phone login-phone"
+            />
           </div>
+
           <div class="about-text">
             <a href="/" class="about-link">Create an account</a>
             <h3>
@@ -63,10 +77,16 @@
             </p>
           </div>
         </div>
-        <div class="about-acc shop">
+
+        <div class="about shop">
           <div class="about-phone-wrap">
-            <img src="./assets/images/shop-phone.svg" alt="Login phone" />
+            <img
+              src="./assets/images/shop-phone.svg"
+              alt="Login phone"
+              class="phone shop-phone"
+            />
           </div>
+
           <div class="about-text">
             <a href="/" class="about-link">Explore varieties</a>
             <h3>
@@ -80,6 +100,66 @@
           </div>
         </div>
       </section>
+
+      <section class="hello-screen last-screen">
+        <div class="hello-screen-text last-screen-text">
+          <h1>Download the app now.</h1>
+          <p>
+            Available on your favorite store. Start your premium experience now
+          </p>
+        </div>
+
+        <div class="hello-screen-btns last-screen-btns">
+          <a
+            href="/"
+            target="_blank"
+            class="btn hello-screen-btn last-screen-btn"
+            >Playstore
+          </a>
+          <a
+            href="/"
+            target="_blank"
+            class="btn hello-screen-btn last-screen-btn"
+            >App store
+          </a>
+        </div>
+      </section>
     </main>
+
+    <footer class="footer">
+      <div class="logo-wrap">
+        <a href="/">
+          <img class="logo" src="./assets/images/logo.svg" alt="Logo" />
+        </a>
+      </div>
+
+      <div class="socials">
+        <a href="https://twitter.com" class="link twit-link" target="_blank">
+          <img
+            src="./assets/images/twitter.svg"
+            alt="twitter"
+            class="soc-img twit-img"
+          />
+        </a>
+        <a href="https://facebook.com" class="link face-link" target="_blank">
+          <img
+            src="./assets/images/facebook.svg"
+            alt="facebook"
+            class="soc-img face-img"
+          />
+        </a>
+        <a href="https://instagram.com" class="link inst-link" target="_blank">
+          <img
+            src="./assets/images/instagram.svg"
+            alt="instagram"
+            class="soc-img inst-img"
+          />
+        </a>
+      </div>
+
+      <div class="copyright-wrap">
+        <p class="copyright">&copy; Copywright 2021 Bella Olonjie.com</p>
+      </div>
+    </footer>
   </body>
 </html>
