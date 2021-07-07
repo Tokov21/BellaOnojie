@@ -1,289 +1,426 @@
 :root {
-  --montserrat: "Montserrat";
+    --montserrat: "Montserrat";
 }
 
 * {
-  box-sizing: border-box;
-  margin: 0;
-  padding: 0;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
 }
 
 a {
-  width: fit-content;
+    width: fit-content;
 
-  text-decoration: none;
-  color: #000;
+    text-decoration: none;
+    color: #000;
 }
 
 body {
-  font-family: "Montserrat", sans-serif;
-  font-weight: 700;
-  font-size: 24px;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 700;
+    font-size: 24px;
+    letter-spacing: 0.2px;
 }
 
 .header {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 
-  /* padding: 14px 10vw; */
+    padding: 14px 10vw;
 
-  position: fixed;
-  top: 0;
-  left: 0;
-  right: 0;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
 
-  z-index: 9999;
+    z-index: 9999;
 
-  background-color: #fff;
+    background-color: #fff;
 }
 
 .hello-screen {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  flex-wrap: wrap;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
 
-  min-height: 100vh;
+    min-height: 100vh;
 
-  background: url(../images/hello-screen-background.webp) no-repeat center
-    center/cover;
-  background-attachment: fixed;
-  color: white;
+    background: url(../images/hello-screen-background.webp) no-repeat center
+        center/cover;
+    background-attachment: fixed;
+    color: white;
 }
 
 .hello-screen * {
-  position: relative;
-  z-index: 1;
+    position: relative;
+    z-index: 1;
 }
 
 .hello-screen-text {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 
-  text-align: center;
+    text-align: center;
 }
 
 .hello-screen-text > h3 {
-  color: #f6f6f6;
+    color: #f6f6f6;
 }
 
 .hello-screen-text > h1 {
-  margin: 17px 0 27px 0;
+    margin: 17px 0 27px 0;
 
-  font-family: "Poppins";
-  font-size: 58px;
+    font-family: "Poppins";
+    font-size: 58px;
 }
 
 .hello-screen-text > p {
-  margin-bottom: 54px;
+    margin-bottom: 54px;
 
-  color: #f6f6f6;
-  font-weight: 500;
+    color: #f6f6f6;
+    font-weight: 500;
 }
 
 .hello-screen-btns {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
 }
 
 .btn {
-  padding: 15px 50px;
-  border: 1px solid #fff;
-  border-radius: 30px;
+    padding: 15px 50px;
+    border: 1px solid #fff;
+    border-radius: 30px;
 
-  background-color: transparent;
-  color: white;
+    background-color: transparent;
+    color: white;
 
-  font-size: 24px;
-  font-family: var(--montserrat);
-  font-weight: 700;
+    font-size: 24px;
+    font-family: var(--montserrat);
+    font-weight: 700;
 }
 
 .btn:hover {
-  background-color: #fa4a0c;
-  cursor: pointer;
-  transition: background-color 0.2s ease;
-  border-color: transparent;
+    background-color: #fa4a0c;
+    cursor: pointer;
+    transition: background-color 0.2s ease;
+    border-color: transparent;
 }
 
 .hello-screen-btn + .hello-screen-btn {
-  margin-left: 34px;
+    margin-left: 34px;
 }
 
 .about-app {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 .phone {
-  width: 100%;
-  height: auto;
-  min-width: 150px;
+    width: 100%;
+    height: auto;
+    min-width: 150px;
 }
 
 .phones {
-  position: relative;
-  z-index: 0;
+    position: relative;
+    z-index: 0;
 
-  margin-top: -260px;
+    margin-top: -260px;
 
-  filter: drop-shadow(50px 30px 150px rgba(46, 4, 4, 0.21));
+    filter: drop-shadow(50px 30px 150px rgba(46, 4, 4, 0.21));
 }
 
 .about-hr {
-  width: 55%;
-  border: none;
-  height: 3px;
-  background-color: #e4e4e4;
-  margin: 129px 0 72px 0;
+    width: 55%;
+    border: none;
+    height: 3px;
+    background-color: #e4e4e4;
+    margin: 129px 0 72px 0;
 }
 
 .how-works {
-  font-size: 44px;
-  text-align: center;
+    font-size: 44px;
+    text-align: center;
+    font-family: "Poppins";
 }
 
 .about {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  flex-wrap: wrap;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
 
-  width: 55vw;
-  height: 100vh;
+    width: 55vw;
+    height: 100vh;
 }
 
 .login-phone {
-  filter: drop-shadow(50px 30px 150px rgba(46, 4, 4, 0.15));
+    filter: drop-shadow(50px 30px 150px rgba(46, 4, 4, 0.15));
 }
 
 .about-text {
-  display: flex;
-  flex-direction: column;
+    display: flex;
+    flex-direction: column;
 }
 
 .about-text * {
-  margin-bottom: 30px;
+    margin-bottom: 30px;
 }
 
 .about-link {
-  color: #fa4a0c;
-  margin-bottom: 17px;
+    color: #fa4a0c;
+    margin-bottom: 17px;
 }
 
 .about-link:hover {
-  transform: scale(1.05);
-  transition: transform 0.2s ease;
+    transform: scale(1.05);
+    transition: transform 0.2s ease;
 }
 
 .about-text h3 {
-  font-size: 40px;
+    font-size: 40px;
 }
 
 .about-text p {
-  color: #737373;
-  font-weight: 500;
+    color: #737373;
+    font-weight: 500;
 }
 
 .shop {
-  flex-direction: row-reverse;
+    flex-direction: row-reverse;
 }
 
 .shop-phone {
-  filter: drop-shadow(50px 30px 150px rgba(46, 4, 4, 0.15));
+    filter: drop-shadow(50px 30px 150px rgba(46, 4, 4, 0.15));
 }
 
 .last-screen {
-  background: url(../images/last-screen-background.webp) no-repeat center
-    center/cover;
-  background-attachment: fixed;
+    background: url(../images/last-screen-background.webp) no-repeat center
+        center/cover;
+    background-attachment: fixed;
 }
 
-.last-screen-text h1 {
-  font-family: var(--montserrat);
-  font-size: 40px;
+.last-screen-text h3 {
+    font-family: var(--montserrat);
+    font-size: 40px;
+    color: white;
 }
 
 .last-screen-btn {
-  border-radius: 10px;
+    border-radius: 10px;
 }
 
 .footer {
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
-  flex-wrap: wrap;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
 
-  margin-top: 37px;
+    margin-top: 37px;
 
-  background-color: #fff;
+    background-color: #fff;
 }
 
 .socials {
-  display: flex;
+    display: flex;
 }
 
 .socials a {
-  display: flex;
+    display: flex;
 }
 
 .socials a:hover {
-  transform: scale(1.2);
-  transition: transform 0.3s ease;
+    transform: scale(1.2);
+    transition: transform 0.3s ease;
 }
 
 .socials a + a {
-  margin-left: 30px;
+    margin-left: 30px;
 }
 
 .soc-img {
-  width: 40px;
+    width: 40px;
 
-  filter: invert(34%) sepia(97%) saturate(3126%) hue-rotate(357deg)
-    brightness(101%) contrast(96%);
+    filter: invert(34%) sepia(97%) saturate(3126%) hue-rotate(357deg)
+        brightness(101%) contrast(96%);
 }
 
 .copyright {
-  font-size: 12px;
-  color: #5c5c5c;
+    font-size: 12px;
+    color: #5c5c5c;
 }
 
 @media screen and (max-width: 414px) {
-  .body {
-    text-align: center;
-  }
+    body {
+        text-align: center;
+    }
 
-  .hello-screen {
-    background-image: none;
+    .hello-screen {
+        display: flex;
+        flex-direction: column;
 
-    color: #000;
-  }
+        background-image: none;
 
-  .hello-screen-text h3{
-    font-size: 16px;
-    color: #000;
-  }
+        color: #000;
+    }
 
-  .hello-screen-text h1 {
-    font-size: 36px;
-  }
+    .hello-screen-text h3 {
+        font-size: 16px;
 
-  .hello-screen-text p {
-    color: #000;
-  }
+        color: #737373;
+    }
 
-  .hello-screen-text h1 > br {
-    display: none;
-  }
+    .hello-screen-text h1 {
+        font-size: 36px;
+        line-height: 42px;
+    }
 
-  .hello-screen-btn + .hello-screen-btn {
-    margin: 10px 0 0 0;
-  }
-  
+    .hello-screen-text p {
+        line-height: 38px;
 
+        color: #737373;
+    }
+
+    .hello-screen-text h1 > br {
+        display: none;
+    }
+
+    .hello-screen-btn {
+        padding: 15px 60px;
+    }
+
+    .hello-screen-btn + .hello-screen-btn {
+        margin: 15px 0 0 0;
+    }
+
+    .hello-screen-btn {
+        border-color: #fa4a0c;
+        color: #fa4a0c;
+    }
+
+    .hello-screen-btn:hover {
+        color: #fff;
+    }
+
+    .about-app {
+        flex-direction: column;
+    }
+
+    .about-app * {
+        order: 4;
+    }
+
+    .phones-wrap {
+        margin: 100px 0 116px 0;
+        order: 1;
+    }
+
+    .about-hr {
+        width: 100%;
+        margin: 49px 0 65px 0;
+        order: 3;
+    }
+
+    .how-works {
+        order: 2;
+        font-size: 24px;
+        font-family: "Montserrat";
+        font-weight: 600;
+    }
+
+    .about {
+        width: 80vw;
+        height: unset;
+    }
+
+    .login {
+        display: flex;
+        flex-direction: column-reverse;
+    }
+
+    .shop {
+        display: flex;
+        flex-direction: column-reverse;
+    }
+
+    .shop .about-link {
+        margin-top: 80px;
+    }
+
+    .about-text {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .about-text a,
+    .about-text h3,
+    .about-text p {
+        margin-bottom: 40px;
+    }
+
+    .about-text h3 {
+        line-height: 57px;
+    }
+
+    .about-text br {
+        display: none;
+    }
+
+    .last-screen {
+        margin-top: 100px;
+        min-height: unset;
+        background-color: #252b42;
+        color: white;
+        padding: 120px 30px;
+    }
+
+    .last-screen-text h3 {
+        font-size: 40px;
+        margin: 17px 0 27px 0;
+        color: white;
+    }
+
+    .last-screen-text p {
+        color: #bdbdbd;
+    }
+
+    .btn.last-screen-btn {
+        border-color: white;
+        color: white;
+        padding: 15px 40px;
+        font-size: 16px;
+        margin: 0;
+    }
+
+    .btn.last-screen-btn + .btn.last-screen-btn {
+        margin-left: 10px;
+    }
+
+    .btn.last-screen-btn:hover {
+        border-color: transparent;
+    }
+
+    .footer {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .footer .logo-wrap {
+        display: none;
+    }
+
+    .socials {
+        margin-bottom: 20px;
+    }
+
+    .copyright {
+        margin-bottom: 20px;
+    }
 }
