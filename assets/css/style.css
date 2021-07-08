@@ -57,6 +57,7 @@ body {
   background: url(../images/hello-screen-background.webp) no-repeat center
     center/cover;
   background-attachment: fixed;
+  transform: translateZ(0);
 }
 
 .hello-screen * {
@@ -217,6 +218,7 @@ body {
   background: url(../images/last-screen-background.webp) no-repeat center
     center/cover;
   background-attachment: fixed;
+  transform: translateZ(0);
 }
 
 .last-screen-text h3 {
