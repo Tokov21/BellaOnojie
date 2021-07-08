@@ -1,0 +1,189 @@
+@media screen and (max-width: 955px) {
+  .phones {
+    margin-top: -150px;
+  }
+
+  .about-section {
+    flex-direction: column;
+  }
+
+  .about-text {
+    align-items: center;
+    text-align: center;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  body {
+    text-align: center;
+  }
+
+  .nav-wrap .menu > div {
+    width: none;
+    height: none;
+    border-radius: unset;
+
+    position: absolute;
+    top: 136px;
+  }
+
+  .screen {
+    background-image: none;
+  }
+
+  .hello-screen {
+    color: #000;
+  }
+
+  .hello-screen-text h3 {
+    font-size: 16px;
+
+    color: #737373;
+  }
+
+  .hello-screen-text h1 {
+    font-size: 36px;
+    line-height: 42px;
+  }
+
+  .hello-screen-text h1 > br {
+    display: none;
+  }
+
+  .hello-screen-text p {
+    color: #737373;
+  }
+
+  .hello-screen-btns {
+    justify-content: center;
+  }
+
+  .hello-screen-btn {
+    padding: 15px 60px;
+
+    border-color: #fa4a0c;
+    color: #fa4a0c;
+  }
+
+  .hello-screen-btn + .hello-screen-btn {
+    margin: 15px 0 0 0;
+  }
+
+  .hello-screen-btn:hover {
+    color: #fff;
+  }
+
+  .about-app * {
+    order: 4;
+  }
+
+  .phones-wrap {
+    order: 1;
+
+    margin: 100px 0 116px 0;
+  }
+
+  .about-hr {
+    order: 3;
+
+    width: 100%;
+    margin: 49px 0 65px 0;
+  }
+
+  .how-works {
+    order: 2;
+
+    font-size: 24px;
+    font-family: "Montserrat";
+    font-weight: 600;
+  }
+
+  .about-section {
+    padding: 0 20px;
+  }
+
+  .login {
+    flex-direction: column-reverse;
+  }
+
+  .shop {
+    flex-direction: column-reverse;
+  }
+
+  .shop .about-link {
+    margin-top: 80px;
+  }
+
+  .about-text {
+    align-items: center;
+  }
+
+  .about-text br {
+    display: none;
+  }
+
+  .about-text a,
+  .about-text h3,
+  .about-text p {
+    margin-bottom: 40px;
+  }
+
+  .about-text h3 {
+    line-height: 57px;
+  }
+
+  .last-screen {
+    min-height: unset;
+    margin-top: 100px;
+    padding: 120px 30px;
+
+    background-color: #252b42;
+    color: white;
+  }
+
+  .last-screen-text h3 {
+    margin: 17px 0 27px 0;
+
+    font-size: 40px;
+
+    color: white;
+  }
+
+  .last-screen-text p {
+    color: #bdbdbd;
+  }
+
+  .last-screen-btns {
+    justify-content: space-around;
+
+    width: 100%;
+  }
+
+  .btn.last-screen-btn {
+    border-color: white;
+    color: white;
+    padding: 15px 30px;
+    font-size: 16px;
+    margin: 0;
+  }
+
+  .btn.last-screen-btn:hover {
+    border-color: transparent;
+  }
+
+  .footer {
+    flex-direction: column;
+  }
+
+  .footer-logo-wrap {
+    display: none;
+  }
+
+  .socials {
+    margin-bottom: 20px;
+  }
+
+  .copyright {
+    margin-bottom: 20px;
+  }
+}
