@@ -229,6 +229,11 @@ body {
   color: white;
 }
 
+.last-screen-btns {
+  display: flex;
+  flex-wrap: wrap;
+}
+
 .last-screen-btn {
   padding: 25px 50px;
 
