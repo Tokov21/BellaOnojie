@@ -1,0 +1,164 @@
+:root {
+  --overlay-color: rgba(24, 39, 51, 0.85);
+  --menu-speed: 0.75s;
+}
+
+.nav-wrap {
+  position: relative;
+}
+
+.nav-wrap .toggler {
+  width: 50px;
+  height: 50px;
+
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 2;
+
+  cursor: pointer;
+
+  opacity: 0;
+}
+
+.nav-wrap .hamburger {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  width: 60px;
+  height: 60px;
+  padding: 1rem;
+
+  position: relative;
+  top: 0;
+  left: 0;
+  z-index: 1;
+}
+
+/* Hamburger Middle line */
+.nav-wrap .hamburger > div {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  width: 100%;
+  height: 2px;
+
+  position: relative;
+
+  background-color: #fa4a0c;
+  transition: transform 0.4s ease;
+}
+
+/* Top and bottom lines */
+.nav-wrap .hamburger > div::before,
+.nav-wrap .hamburger > div::after {
+  width: 100%;
+  height: 2px;
+  content: "";
+
+  position: absolute;
+  top: -10px;
+
+  z-index: 1;
+
+  background: inherit;
+}
+
+/* Moves line down */
+.nav-wrap .hamburger > div::after {
+  top: 10px;
+}
+
+/* Toggler animate */
+.nav-wrap .toggler:checked + .hamburger > div {
+  transform: rotate(135deg);
+}
+
+/* Turn lines into X */
+.nav-wrap .toggler:checked + .hamburger > div::before,
+.nav-wrap .toggler:checked + .hamburger > div::after {
+  top: 0;
+  transform: rotate(90deg);
+}
+
+/* Rotate on hover when checked */
+.nav-wrap .toggler:checked:hover + .hamburger > div {
+  transform: rotate(225deg);
+}
+
+/* Show menu */
+.nav-wrap .toggler:checked ~ .menu {
+  visibility: visible;
+}
+
+.nav-wrap .toggler:checked ~ .menu > div {
+  transform: scale(1);
+  transition-duration: var(--menu-speed);
+}
+
+.nav-wrap .toggler:checked ~ .menu > div > div {
+  opacity: 1;
+  transition: opacity 0.4s ease;
+}
+
+.nav-wrap .menu {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  width: 100%;
+  height: 100%;
+
+  position: fixed;
+  top: 0;
+  left: 0;
+
+  visibility: hidden;
+  overflow: hidden;
+}
+
+.nav-wrap .menu > div {
+  display: flex;
+  flex: none;
+  align-items: center;
+  justify-content: center;
+
+  width: 200vw;
+  height: 200vw;
+  border-radius: 50%;
+
+  background: var(--overlay-color);
+  transform: scale(0);
+  transition: transform 0.4s ease;
+}
+
+.nav-wrap .menu > div > div {
+  max-width: 90vw;
+  max-height: 100vh;
+
+  text-align: center;
+  opacity: 0;
+  transition: opacity 0.4s ease;
+}
+
+.nav-wrap .menu > div > div > ul > li {
+  padding: 1rem;
+
+  list-style: none;
+  color: #fff;
+  font-size: 1.5rem;
+}
+
+.nav-wrap .menu > div > div > ul > li > a {
+  color: inherit;
+  text-decoration: none;
+}
+
+.nav-wrap .menu > div > div > ul > li:hover {
+  color: #fa4a0c;
+  transform: scale(1.2);
+  transition-property: transform, color;
+  transition: 0.3s ease;
+}
