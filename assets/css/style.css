@@ -259,7 +259,7 @@ body {
   color: #5c5c5c;
 }
 
-@media screen and (max-width: 414px) {
+@media screen and (max-width: 450px) {
   body {
     text-align: center;
   }
@@ -338,8 +338,8 @@ body {
   }
 
   .about {
-    width: 80vw;
     height: unset;
+    padding: 0 20px;
   }
 
   .login {
@@ -394,16 +394,18 @@ body {
     color: #bdbdbd;
   }
 
+  .last-screen-btns {
+    justify-content: space-around;
+    
+    width: 100%;
+  }
+
   .btn.last-screen-btn {
     border-color: white;
     color: white;
-    padding: 15px 40px;
+    padding: 15px 30px;
     font-size: 16px;
     margin: 0;
-  }
-
-  .btn.last-screen-btn + .btn.last-screen-btn {
-    margin-left: 10px;
   }
 
   .btn.last-screen-btn:hover {
