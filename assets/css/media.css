@@ -1,3 +1,15 @@
+@media screen and (max-height: 1000px) {
+  .phones {
+    margin-top: -20vh;
+  }
+}
+
+@media screen and (max-height: 700px) {
+  .phones {
+    margin-top: -10vh;
+  }
+}
+
 @media screen and (max-width: 955px) {
   .phones {
     margin-top: -150px;
@@ -13,18 +25,38 @@
   }
 }
 
+@media screen and (max-width: 700px) and (max-height: 1000px) {
+  .phones {
+    margin-top: -50px;
+  }
+}
+
+@media screen and (max-width: 550px) {
+  .phones {
+    margin-top: -100px;
+  }
+}
+
+@media screen and (max-width: 1000px) and (max-height: 590px) {
+  .phones {
+    margin-top: 0;
+  }
+}
+
 @media screen and (max-width: 500px) {
   body {
     text-align: center;
   }
 
+  .logo {
+    width: 120px;
+  }
+
   .nav-wrap .menu > div {
-    width: none;
-    height: none;
     border-radius: unset;
 
     position: absolute;
-    top: 136px;
+    top: 92px;
   }
 
   .screen {
@@ -33,6 +65,10 @@
 
   .hello-screen {
     color: #000;
+  }
+
+  .hello-screen-text {
+    padding: 10px;
   }
 
   .hello-screen-text h3 {
@@ -56,6 +92,7 @@
 
   .hello-screen-btns {
     justify-content: center;
+    flex-direction: column;
   }
 
   .hello-screen-btn {
@@ -81,6 +118,10 @@
     order: 1;
 
     margin: 100px 0 116px 0;
+  }
+
+  .phones {
+    margin-top: -260px;
   }
 
   .about-hr {
@@ -185,5 +226,23 @@
 
   .copyright {
     margin-bottom: 20px;
+  }
+}
+
+@media screen and (max-width: 500px) and (max-height: 600px) {
+  .hello-screen-text {
+    margin-top: 50vw;
+  }
+
+  .phone {
+    width: 70%;
+  }
+
+  .phones {
+    margin-top: 0;
+  }
+
+  .btn.last-screen-btn {
+    padding: 15px;
   }
 }
